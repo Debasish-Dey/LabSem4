@@ -1,0 +1,5 @@
+Q1. Given a set. Input a string, check if it belongs to the set.  Print Valid/Invalid
+Q2. Contcatenation of string (don't use library functions)
+Q3. power a string
+Q4. print the powerset(all possible subsets of a set) of a given set
+Q5. Input alphabet set, find all possible strings of length 'n'
