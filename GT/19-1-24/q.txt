@@ -1,0 +1,8 @@
+number of vertex
+number of edges
+degree of each vertex
+self loop present or not
+parallel edges
+complete graph or not
+
+check if graphs are isomorphic or not
