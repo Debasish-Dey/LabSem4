@@ -38,6 +38,7 @@ int main(){
     for(int i=0; i<n; i++){
         a.push_back({v[i],price[i],weight[i]});
     }
+    
     sort(a.begin(), a.end());
 
     float c=0;
