@@ -1,29 +1,33 @@
 #include <iostream>
 #include <vector>
-#include <chrono>
+#include <chrono> 
+#include <cstdlib> 
 using namespace std;
-using namespace std::chrono;
+using namespace std::chrono; 
 
-void insertionSort(vector<int> &v)
+void bubbleSort(vector<int> &v)
 {
-    for (int i = 1; i < v.size(); i++)
+    for (int i = 0; i < v.size(); i++)
     {
-        int t = v[i];
-        int j = i - 1;
-        while (j != -1 && v[j] > t)
+        bool flag = 1;
+        for (int j = 0; j < v.size() - i - 1; j++)
         {
-            v[j + 1] = v[j];
-            j--;
+            if (v[j] > v[j + 1])
+            {
+                swap(v[j], v[j + 1]);
+                flag = 0;
+            }
         }
-        v[j + 1] = t;
+        if (flag)
+            break;
     }
 }
 
-int main() 
+int main()
 {
     int n ; 
     cout << "Enter the number of elements: ";
-    cin >> n;
+    cin >> n; 
     vector<int> v;
 
     for (int i = 0; i < n; i++)//generate numbers in random order
@@ -33,7 +37,7 @@ int main()
     }
 
     auto start = high_resolution_clock::now(); 
-    insertionSort(v);
+    bubbleSort(v);
     auto stop = high_resolution_clock::now(); 
     auto duration = duration_cast<microseconds>(stop - start); 
     cout << endl;
@@ -46,7 +50,7 @@ int main()
     }
     
     auto start1 = high_resolution_clock::now(); 
-    insertionSort(v);
+    bubbleSort(v);
     auto stop1 = high_resolution_clock::now(); 
     auto duration1 = duration_cast<microseconds>(stop1 - start1); 
     cout << endl;
@@ -59,7 +63,7 @@ int main()
     }
 
     auto start2 = high_resolution_clock::now(); 
-    insertionSort(v);
+    bubbleSort(v);
     auto stop2 = high_resolution_clock::now(); 
     auto duration2 = duration_cast<microseconds>(stop2 - start2); 
     cout << endl;
