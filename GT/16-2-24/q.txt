@@ -1,0 +1,11 @@
+write a c++ program to find the no of possible spanning trees possible 
+    check if complete -> use formula to find it 
+    if not complete -> user kirchoff's law
+
+write a c++ program to display the distance between all the vertices in a graph
+    calculate eccentricity of all vertex
+    diameter and radius of graph
+    display all 
+
+Write a program to check if a graph is eulerian graph or not 
+    if all degree even then eulerian 
