@@ -60,7 +60,7 @@ void displayHuffmanCodes(const unordered_map<char, string>& huffmanCode) {
 int main() {
     string input;
     cout << "Enter a string: ";
-    getline(cin, input);
+    // getline(cin, input);
 
     unordered_map<char, unsigned> freqMap;
     for (char c : input) {

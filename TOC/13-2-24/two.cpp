@@ -26,7 +26,7 @@ void moore(string s){
         }
         ans+=to_string(state);
     }
-    cout<<"moore:"<<ans;
+    cout<<"moore:"<<ans<<endl;
 }
 
 void mealy(string s){
